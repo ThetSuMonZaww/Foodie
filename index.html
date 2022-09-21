@@ -8,10 +8,10 @@
     <title>Foodie</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg fixed-top navbar-light shadow-sm bg-white">
+<nav class="site_navbar navbar navbar-expand-lg fixed-top navbar-light shadow-sm bg-white">
     <div class="container">
-        <a class="navbar-brand" href="#"><img src="public/img/icon.png" height="40px" alt="">
-            <span class="fw-bold">Foodie</span>
+        <a class="navbar-brand" href="#"><img src="public/img/icon.png" alt="" class="brand_icon">
+            <span class="fw-bold brand_name">Foodie</span>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -41,13 +41,20 @@
 <section class="container">
     <div class="row min-vh-100 justify-content-evenly align-items-center">
         <div class="col-12 col-md-6 col-lg-5">
-            <h1>Tasty Food ...</h1>
-            <p class="text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis deserunt dolores non vero, voluptas. Animi culpa delectus deleniti dignissimos, earum enim explicabo, fuga, fugit non quas temporibus totam voluptatem.</p>
-            <h3>Join the best food of week</h3>
-            <a href="#" class="btn btn-primary">View Menu</a>
+            <div class="animate__animated animate__fadeInDown">
+                <h1 class="text-primary display-4 fw-bold mb-4">
+                    Tasty <span class="element"></span>
+                </h1>
+                <p class="text-black-50 mb-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae debitis deserunt dolores non vero, voluptas. Animi culpa delectus deleniti dignissimos, earum enim explicabo, fuga, fugit non quas temporibus totam voluptatem.</p>
+                <h4 class="fw-bold mb-4">Join the best food of week</h4>
+                <div class="">
+                    <i class="btn btn-lg btn-primary"><i class="bi bi-cart"></i></i>
+                    <a href="#" class="btn btn-lg btn-outline-primary"><i class="bi bi-list-ul"></i>View Menu</a>
+                </div>
+            </div>
         </div>
         <div class="col-12 col-md-6 col-lg-5">
-            <img src="public/img/home.png" alt="" class="w-100">
+            <img src="public/img/home.png" alt="" class="w-100 animate__animated animate__fadeInDown delay-2s">
         </div>
     </div>
 </section>

@@ -1,11 +1,40 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap');
 @import "node_modules/bootstrap-icons/font/bootstrap-icons.css";
+@import "node_modules/animate.css/animate.min.css";
 
 $primary : #007822;
 
 $font-family-sans-serif : 'Montserrat', sans-serif;
 $navbar-nav-link-padding-x : 1.5rem;
+
+$border_radius : .5rem;
+$border-radius-lg : 0.75rem;
+
+$btn_font-size-lg : 1rem;
+$btn-padding-x-lg : 1.75rem;
+$btn_padding-y-lg : .5rem;
+
+@import "node_modules/bootstrap/scss/bootstrap";
+
 .nav-link.active{
   color : white !important;
 }
-@import "node_modules/bootstrap/scss/bootstrap";
+
+.brand_icon{
+  height: 40px;
+  transition: 0.5s;
+}
+
+.nav-link{
+  transition: transform 0.5s;
+}
+
+.site_navbar{
+  &:hover .brand_icon{
+    transform: rotate(360deg);
+  }
+  &:hover .nav-link.active{
+    transform: translateY(-3px);
+  }
+
+}
